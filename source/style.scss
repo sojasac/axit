@@ -481,5 +481,59 @@
       }
     }
   }
+  // design
+  .design{
+    width: 100%;
+    background: url(../img/sector__img/DesignFon.png);
+    background-attachment: 100% 100%;
+    height: 442px;
+    .design__container{
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      @include flexbox();
+      justify-content: center;
+      .design__content{
+        margin: 90px 0 50px 0;
+        text-align: center;
+        @include flexbox();
+        flex-direction: column;
+        align-items: center;
+        .design__title{
+          font-family: 'Raleway';
+          font-size: 36px;
+          color: #fff;
+          margin: 0 0 55px 0;
+          text-transform: uppercase;
+        }
+        .title-hr{
+          background: #fff;
+        }
+        .design__text{
+          font-family: 'Raleway';
+          font-size: 18px;
+          color: #fff;
+          margin: 40px 0 75px 0;
+        }
+        .design__btn{
+          display: block;
+          font-family: 'Raleway';
+          width: 25%;
+          height: 60px;
+          border: 2px solid #fff;
+          @include flexbox();
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          background: none;
+          &:hover{
+            background: #fff;
+            color: #EC7979;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
   
 }
