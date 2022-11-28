@@ -8,6 +8,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header__top">
       <div class="header__content">
         <div class="header__logo">
@@ -91,7 +92,6 @@
             <button class="tabs__main__links-button tabs__main__links-button_active">tab 1</button>
             <button class="tabs__main__links-button">tab 2</button>
             <button class="tabs__main__links-button">tab 3</button>
-            <div class="tabs__main__links__emptyBlock"></div>
           </div>
           <div class="tabs__main__content">
             <div class="tabs__main__content__left">
@@ -123,13 +123,11 @@
       </section>
       <!-- AWESOME -->
       <section class="awesome">
-        <div class="awesome__title">
-          <h2 class="awesome__title-h2">WHY THIS IS AWESOME</h2>
+          <h2 class="main__title">WHY THIS IS AWESOME</h2>
           <hr class="title-hr" />
-          <p class="awesome__subtitle-p">
+          <p class="main__subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-        </div>
         <div class="awesome__content">
           <div class="awesome__content__items">
             <div class="awesome__content__items__circle">
@@ -181,11 +179,54 @@
           </div>
         </div>
       </section>
+      <!-- PRICING -->
+      <section class="pricing">
+        <div class="pricing__container">
+          <h2 class="main__title">pricing options</h2>
+          <hr class="title-hr" />
+          <p class="main__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="pricing__content">
+            <div class="pricing__content__items">
+                <div class="pricing__items__lists" id="pricing__list_nameRate">Basic</div>
+                <div class="pricing__items__lists" id="pricing__list__amount">$10</div>
+                <div class="pricing__items__lists" id="pricing__list__nameMainList">Free for life</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+            </div>
+            <div class="pricing__content__items">
+              <div class="pricing__items__lists" id="pricing__list_nameRate">Basic</div>
+                <div class="pricing__items__lists" id="pricing__list__amount">$10</div>
+                <div class="pricing__items__lists" id="pricing__list__nameMainList">Free for life</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+            </div>
+            <div class="pricing__content__items">
+              <div class="pricing__items__lists" id="pricing__list_nameRate">Basic</div>
+                <div class="pricing__items__lists" id="pricing__list__amount">$10</div>
+                <div class="pricing__items__lists" id="pricing__list__nameMainList">Free for life</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+                <div class="pricing__items__lists">1 gb of space</div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Customers -->
       <section class="customers">
-        <h2 class="customers__title">what our customers are saying</h2>
+        <h2 class="main__title">what our customers are saying</h2>
         <hr class="title-hr" />
-        <p class="customers_subTitle">
+        <p class="main__subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <div class="customers__content">
@@ -243,7 +284,7 @@
         </div>
       </section>
       <!-- DESIGN -->
-      <sector class="design">
+      <section class="design">
         <div class="design__container">
           <div class="design__content">
             <h2 class="design__title">STYLISH AXURE DESIGN</h2>
@@ -252,8 +293,51 @@
             <a href="#" class="design__btn">Download</a>
           </div>
         </div>
-      </sector>
+      </section>
+      <!-- CONTACT US -->
+      <section class="contactUs">
+        <div class="contactUs__container">
+          <h2 class="main__title">contact us</h2>
+          <hr class="title-hr" />
+          <p class="main__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="contactUs__content">
+            <div class="contactUs__content__personal">
+              <form action="#" class="contactUs__form">
+                <input type="text" class="form__content__items" name="Name"
+                  placeholder="Name">
+                <input type="email" class="form__content__items" name="Email"
+                  placeholder="Email">
+                <input type="password" class="form__content__items"
+                  name="Password" placeholder="Password"
+                  autocomplete="current-password" required minlength="8"
+                  maxlength="16" size="16">
+              </form>
+            </div>
+            <div class="contactUs__content__message">
+              <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <a href="" class="contactUs__btn">Send Message</a>
+        </div>
+      </section>
     </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer__container">
+        <div class="socialMedia__links">
+            <a href="#"class="socialMedia__links__items"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"class="socialMedia__links__items"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"class="socialMedia__links__items"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"class="socialMedia__links__items"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"class="socialMedia__links__items"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"class="socialMedia__links__items"><i class="fa-brands fa-github"></i></a>
+            <a href="#"class="socialMedia__links__items"><i class="fa-sharp fa-solid fa-rss"></i></a>
+        </div>
+        <p class="footer__container__text">© 2015 Axure Themes</p>
+      </div>
+    </footer>
     <script src="https://kit.fontawesome.com/820788df6d.js"
       crossorigin="anonymous"></script>
   </body>

@@ -17,6 +17,17 @@
     url(../fonts/Raleway/raleway-v28-latin-regular.woff) format('woff'),
     url(../fonts/Raleway/raleway-v28-latin-regular.woff2) format('woff2');
 }
+@mixin socialMedia {
+  .socialMedia__links{
+    @include flexbox();
+    justify-content: space-between;
+    width: 55%;
+    .socialMedia__links__items{
+      font-size: 55px;
+      color:  #CCCCCC;
+    }
+  }
+}
 // Header
 .header__top{
   @include flexbox();
@@ -72,7 +83,6 @@
       }
     }
   }
-
 }
 // Wrapper
 .wrapper{
@@ -81,12 +91,29 @@
   flex-direction: column;
   align-items: center;
   cursor: default;
+  .main__title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 55px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .main__subtitle{
+    margin: 40px 0 110px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    text-align: center;
+  }
   .title-hr{
     width: 170px;
     margin: 0 auto;
     height: 2px;
     background: #EC7979;
   }
+  
   // Axit Main
   .axit__top{
     @include flexbox();
@@ -146,7 +173,8 @@
             font-size: 18px;
             &:hover{
               background: #fff;
-              color: #333;
+              color: #EC7979;
+              font-weight: 700;
             }
           }
         }
@@ -238,15 +266,7 @@
           color: #86878B;
         }
       }
-      .socialMedia__links{
-        @include flexbox();
-        justify-content: space-between;
-        width: 55%;
-        .socialMedia__links__items{
-          font-size: 55px;
-          color:  #CCCCCC;
-        }
-      }
+      @include socialMedia();
     }
 
   }
@@ -268,23 +288,18 @@
           text-align: center;
           width: 17%;
           background: #FFF;
-          border-bottom: 1px solid #C6CBCD;
         }
         .tabs__main__links-button_active{
           border: 1px solid #C6CBCD;
           border-top-left-radius: 7px;
           border-top-right-radius: 7px;
-          border-bottom: none;
-        }
-        & :last-child{
-          width: 49%;
-          border-bottom: 1px solid #C6CBCD;
+          border-bottom: 1px solid transparent;
+          margin: 0 0 -1px 0;
         }
       }
       .tabs__main__content{
         @include flexbox();
         border: 1px solid #C6CBCD;
-        border-top: 0;
         justify-content: space-between;
         .tabs__main__content__left{
           margin: 47px 0 55px 100px;
@@ -327,22 +342,6 @@
   .awesome{
     width: 1170px;
     padding: 0 0 58px 0;
-    .awesome__title{
-      text-align: center;
-      .awesome__title-h2{
-        font-family: 'Raleway', sans-serif;
-        font-size: 36px;
-        line-height: 42px;
-        padding: 55px 0;
-      }
-      .awesome__subtitle-p{
-        margin: 40px 0 110px 0;
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        line-height: 21px;
-        color: #86878B;
-      }
-    }
     .awesome__content{
       @include flexbox();
       align-items: center;
@@ -386,24 +385,65 @@
         }
       }
   }
+  // PRICING
+  .pricing{
+    width: 100%;
+    min-height: 900px;
+    background: #F5F5F5;
+    padding: 105px 0 50px 0;
+    @include flexbox();
+    justify-content: center;
+    .pricing__container{
+      width: 77.5%;
+      text-align: center;
+      .pricing__content{
+        @include flexbox();
+        justify-content: space-between;
+        .pricing__content__items{
+          width: 32%;
+          font-family: 'Raleway';
+          font-size: 18px;
+          color: #86878B;
+          .pricing__items__lists{
+            @include flexbox();
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            border: 1px solid #F5F5F5;
+            background: #fff;
+          }
+          #pricing__list_nameRate{
+            font-family: 'Open Sans';
+            font-size: 24px;
+            color: #fff;
+            font-weight: 700;
+            background: #333333;
+          }
+          #pricing__list__amount{
+            height: 100px;
+            font-weight: 700;
+            font-size: 36px;
+            color: #fff;
+            background: #333333;
+          }
+          #pricing__list__nameMainList{
+            background: #333333;
+          }
+          &:hover{
+            margin: -20px 0 0 0;
+           filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+          }
+        }
+      }
+    }
+  }
   // Customers
   .customers{
     width: 1170px;
     text-align: center;
     padding: 105px 0 65px 0;
     font-family: 'Raleway', sans-serif;
-    .customers__title{
-      font-size: 36px;
-      line-height: 42px;
-      text-transform: uppercase;
-      padding: 0 0 55px 0;
-    }
-    .customers_subTitle{
-      font-size: 18px;
-      line-height: 21px;
-      color: #86878B;
-      margin: 40px 0 85px 0;
-    }
     .customers__content{
       @include flexbox();
       justify-content: space-between;
@@ -481,7 +521,7 @@
       }
     }
   }
-  // design
+  // Design
   .design{
     width: 100%;
     background: url(../img/sector__img/DesignFon.png);
@@ -535,5 +575,99 @@
       }
     }
   }
+  // Contuct Us
+  .contactUs{
+    @include flexbox();
+    justify-content: center;
+    width: 100%;
+    .contactUs__container{
+      width: 77.5%;
+      margin: 50px 0;
+      @include flexbox();
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .main__subtitle{
+        margin-bottom: 90px;
+      }
+      .contactUs__content{
+        @include flexbox();
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 0 50px 0;
+        .contactUs__content__personal{
+          width: 49%;
+          .contactUs__form{
+            @include flexbox();
+            flex-direction: column;
+            .form__content__items{
+              width: 100%;
+              font-family: 'Open Sans';
+              font-size: 14px;
+              line-height: 19px;
+              padding: 0 0 15px 0;
+              border-bottom: 1px solid #BDBDBD;
+              margin: 0 0 30px 0;
+              &:last-child{
+                margin: 0;
+              }
+            }
+          }
+        }
+        .contactUs__content__message{
+          width: 49%;
+          & textarea{
+            font-family: 'Open Sans';
+            font-size: 14px;
+            line-height: 16px;
+            width: 100%;
+            border-bottom: 1px solid #BDBDBD;
+            padding: 0 0 3px 0;
+          }
+        }
+      }
+      .contactUs__btn{
+          display: block;
+          font-family: 'Open Sans';
+          width: 25%;
+          height: 60px;
+          font-size: 18px;
+          background: #EC7979;
+          @include flexbox();
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          &:hover{
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+
+    }
+  }
   
+}
+// Footer
+footer{
+  width: 100%;
+  background: #000;
+  height: 165px;
+  @include flexbox();
+  justify-content: center;
+  align-items: center;
+  .footer__container{
+    width: 35%;
+    @include socialMedia();
+    .socialMedia__links{
+      width: 100%;
+      margin: 0 0 30px 0;
+    }
+    .footer__container__text{
+      font-family: 'Raleway';
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+    }
+  }
+
 }

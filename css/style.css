@@ -180,6 +180,22 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   cursor: default;
 }
+.wrapper .main__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  padding: 55px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.wrapper .main__subtitle {
+  margin: 40px 0 110px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #86878B;
+  text-align: center;
+}
 .wrapper .title-hr {
   width: 170px;
   margin: 0 auto;
@@ -267,7 +283,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper .axit__top .axit__main .axit__main__content .axit__main__text .axit__main__btn:hover {
   background: #fff;
-  color: #333;
+  color: #EC7979;
+  font-weight: 700;
 }
 .wrapper .axit__top .axit__main .axit__main__content .axit__main__form {
   width: 40%;
@@ -421,24 +438,19 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   width: 17%;
   background: #FFF;
-  border-bottom: 1px solid #C6CBCD;
 }
 .wrapper .tabs .tabs__main .tabs__main__links .tabs__main__links-button_active {
   border: 1px solid #C6CBCD;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  border-bottom: none;
-}
-.wrapper .tabs .tabs__main .tabs__main__links :last-child {
-  width: 49%;
-  border-bottom: 1px solid #C6CBCD;
+  border-bottom: 1px solid transparent;
+  margin: 0 0 -1px 0;
 }
 .wrapper .tabs .tabs__main .tabs__main__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #C6CBCD;
-  border-top: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -480,22 +492,6 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper .awesome {
   width: 1170px;
   padding: 0 0 58px 0;
-}
-.wrapper .awesome .awesome__title {
-  text-align: center;
-}
-.wrapper .awesome .awesome__title .awesome__title-h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 36px;
-  line-height: 42px;
-  padding: 55px 0;
-}
-.wrapper .awesome .awesome__title .awesome__subtitle-p {
-  margin: 40px 0 110px 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #86878B;
 }
 .wrapper .awesome .awesome__content {
   display: -webkit-box;
@@ -549,23 +545,78 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 21px;
 }
+.wrapper .pricing {
+  width: 100%;
+  min-height: 900px;
+  background: #F5F5F5;
+  padding: 105px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .pricing .pricing__container {
+  width: 77.5%;
+  text-align: center;
+}
+.wrapper .pricing .pricing__container .pricing__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .pricing .pricing__container .pricing__content .pricing__content__items {
+  width: 32%;
+  font-family: "Raleway";
+  font-size: 18px;
+  color: #86878B;
+}
+.wrapper .pricing .pricing__container .pricing__content .pricing__content__items .pricing__items__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #F5F5F5;
+  background: #fff;
+}
+.wrapper .pricing .pricing__container .pricing__content .pricing__content__items #pricing__list_nameRate {
+  font-family: "Open Sans";
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  background: #333333;
+}
+.wrapper .pricing .pricing__container .pricing__content .pricing__content__items #pricing__list__amount {
+  height: 100px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+  background: #333333;
+}
+.wrapper .pricing .pricing__container .pricing__content .pricing__content__items #pricing__list__nameMainList {
+  background: #333333;
+}
+.wrapper .pricing .pricing__container .pricing__content .pricing__content__items:hover {
+  margin: -20px 0 0 0;
+  -webkit-filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+          filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+}
 .wrapper .customers {
   width: 1170px;
   text-align: center;
   padding: 105px 0 65px 0;
   font-family: "Raleway", sans-serif;
-}
-.wrapper .customers .customers__title {
-  font-size: 36px;
-  line-height: 42px;
-  text-transform: uppercase;
-  padding: 0 0 55px 0;
-}
-.wrapper .customers .customers_subTitle {
-  font-size: 18px;
-  line-height: 21px;
-  color: #86878B;
-  margin: 40px 0 85px 0;
 }
 .wrapper .customers .customers__content {
   display: -webkit-box;
@@ -725,4 +776,141 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   color: #EC7979;
   font-weight: 700;
+}
+.wrapper .contactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.wrapper .contactUs .contactUs__container {
+  width: 77.5%;
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .contactUs .contactUs__container .main__subtitle {
+  margin-bottom: 90px;
+}
+.wrapper .contactUs .contactUs__container .contactUs__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+.wrapper .contactUs .contactUs__container .contactUs__content .contactUs__content__personal {
+  width: 49%;
+}
+.wrapper .contactUs .contactUs__container .contactUs__content .contactUs__content__personal .contactUs__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper .contactUs .contactUs__container .contactUs__content .contactUs__content__personal .contactUs__form .form__content__items {
+  width: 100%;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 19px;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #BDBDBD;
+  margin: 0 0 30px 0;
+}
+.wrapper .contactUs .contactUs__container .contactUs__content .contactUs__content__personal .contactUs__form .form__content__items:last-child {
+  margin: 0;
+}
+.wrapper .contactUs .contactUs__container .contactUs__content .contactUs__content__message {
+  width: 49%;
+}
+.wrapper .contactUs .contactUs__container .contactUs__content .contactUs__content__message textarea {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+  border-bottom: 1px solid #BDBDBD;
+  padding: 0 0 3px 0;
+}
+.wrapper .contactUs .contactUs__container .contactUs__btn {
+  display: block;
+  font-family: "Open Sans";
+  width: 25%;
+  height: 60px;
+  font-size: 18px;
+  background: #EC7979;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.wrapper .contactUs .contactUs__container .contactUs__btn:hover {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer {
+  width: 100%;
+  background: #000;
+  height: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer__container {
+  width: 35%;
+}
+footer .footer__container .socialMedia__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55%;
+}
+footer .footer__container .socialMedia__links .socialMedia__links__items {
+  font-size: 55px;
+  color: #CCCCCC;
+}
+footer .footer__container .socialMedia__links {
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+footer .footer__container .footer__container__text {
+  font-family: "Raleway";
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
