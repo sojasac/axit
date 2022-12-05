@@ -1,5 +1,10 @@
       /* TABLET */
        @media only screen and (min-width: 481px) and (max-width: 720px) {
+          /* Header */
+          .header__top{
+            justify-content: flex-end;
+            padding-right: 20px;
+          }
           /* Axit__top */
           .wrapper .axit__top .axit__main{
             justify-content: flex-end;
